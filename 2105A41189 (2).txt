@@ -1,0 +1,307 @@
+--------------------------------------------------------------
+DAY 1:
+--------------------------------------------------------------
+
+Optimization:
+1.finding the optimum solution 
+2.lower the time complexity
+*itarative method
+1.repeated approach 
+2.recurssion
+*dynamic programming 
+_________________________________________________________________
+
+1.For calculation which program works efficiently we use time complexity
+_________________________________________________________________
+
+DYNAMIC PROGRAMMING
+----------------------------
+1.In greedy approach whatever is the solution for the problem given at the first go is fixed
+ as the final solution
+
+NOTE:
+1.This is not the best approach for all the scenarios,however it also works for some cases
+2.In dynamic programming ,we will be finding out all the possible solutions for the given
+ problem out of which the best will be selected
+
+
+TIME AND SPACE COMPLEXITY:
+-----------------------------
+AYMPTOTIC NOTATIONS:
+Three types of notations are:
+[O(n)]
+omega
+theta
+___________________________________________________________
+
+IMP POINTS:
+
+Seive algorithm used to eliminate duplicate values 
+Id():command used to declare memory allocation in python
+
+___________________________________________________________
+{
+int....4
+char..1
+}
+space:8bytes
+12                       int=3,char=1,int=4
+5 bytes                   
+                         space complexity is 8 bytes 
+space
+
+union
+{
+int...4
+char...1 byte
+}
+___________________________________________________________
+
+struct
+{
+double
+char
+}                       
+8 bytes
+8
+=1                        
+=7                       
+struct                   
+{
+int 
+double
+char
+}
+24
+
+4+4+8+1+7
+space complexity is 24 bytes
+__________________________________________________________
+
+Polynomial theorem f(n)=n+1
+which is O(n) big o of n (or) order of n 
+___________________________________________________________
+
+#include<stdio.h>
+int main()
+{
+int i,n=5;
+for(i=0;i<n;i++)
+printf("%d\n",i);
+printf("final i:%d",i);
+return 0;
+}
+
+output:
+0
+1
+2
+3
+4
+final i=5
+__________________________________________________________________
+
+for(i=1;i<n;i+2)
+{
+statements
+}
+n/2
+f(n)=n/2
+Degree of polynomial is n 
+so n/anything is n 
+so here also o(n)
+*so irrespective of iteration time is gonna be same o(n)
+___________________________________________________________________
+ 
+___________________________________________________________________
+==========================================================================================
+DAY-2
+==========================================================================================
+TIME COMPLEXITY
+for(i=0;i<n;i++)....//n+1 times
+{
+for(j=0;j<n;j++)    //n*(n+1)
+{
+Statements;   //n*n----n square
+}
+}
+;
+Time complexity=o(n square)
+_______________________________________________________________________________________
+ #IMP POINTS:
+---> Primitive data types 
+1.int
+2.float
+3.char
+4.double
+-Python supports non-primitive data type, whereas C and java support primitive data types
+______________________________________________________________________________________
+
+for(i=0;i<n;i++)
+{
+for(i=0;i<n;i++)
+{
+statements;
+}
+};     // i=0 then 0<0 no              i    j
+                                     0    nothing
+ so when i 0....0 times
+1..... 1 time                        1    0 will execute
+2...2 times 
+so 1+2+3+4+5                               1 will stop
+
+                                     2    0,1 executes
+                                          2 will stop
+_____________________________________________________________________________________________
+ p=0,
+for(i=1;p<=n;i++)
+{
+p=p+1;
+}
+   1  0+1 bcs p=p+1..when N is 0     now assuming n times when will s
+   2  1+2=3....N is 1                      
+   3  1+2+3=6
+   .
+   .
+   .
+   k 1+2+...k
+_____________________________________________________________________________________________
+ANALYSE
+i=1    1 time
+i=2    2 times (1*2)
+i=3    4 times (1*2)*2=2 power 2
+i=4    8 times (1*2)*2)*2= 2 power 3
+so when stops i>=n
+              i=2 power k
+              2 power k>=n
+              k log n base 2
+so time complexity O(log n base 2)
+_________________________________________________________________________________________________
+
+create 1D array that should contain numbers 10 to 50
+_________________________________________________________________________________________
+
+DERIVED FORMULAE
+for(i=0;i<n;i++) ----O(n)
+for(i=0;i<n;i+2) ----O(n)
+for(i=n;i>1;i--) ----O(n)
+ 
+for(i=1;i<n;i=i*2)--- O(log n base 2)
+for(i=1;i>1;i=i*3)--- O(log n base 3)
+for(i=n;i>1;i=i/2)--- O(log n base 2)
+______________________________________________________________________________________________
+
+* Constant    Time complexity: O(1)...
+* Linear      Time complexity: O(n)...
+* Logarithmic Time complexity: O(log n)...
+* Quadratic   Time complexity: O(n^2)...
+* Exponential Time complexity: O(2^n)
+___________________________________________________________________________________________________
+
+FINAL SUMMARY:
+
+i++ i-- i+2  O(n)
+
+i*2 i/2      log(n)  base 2
+
+p=0
+for p<n i++
+p=p+i
+
+O(sqrt(n)
+________________________________________________________________________________
+SPACE COMPLEXITY :
+1.array of size n will take n space and 2d array will take n*n order of n^2 space
+constant space complexity order of n
+2.same amount of space regardless of the input size of n is called constant complexity
+ex: sum of array elements and linear search
+3.it is order of 1 beacause space is not depending upon values
+_______________________________________________________________________________
+create an array sum that array elements using functions
+___________________________________________________________________________________
+ASSIGNMENT:
+1.what is stack and heap memory where we are using heap
+2.learn quick sort
+3.Fibanoci and factorial using recurssion
+___________________________________________________________________________________
+1.linear compplexity:O(n)
+2.log-linear complexity:O(nlogn)
+-> when the space complexity of an algorithm grows proportionally to the input size
+linear search:O(1)
+polynomial complexity:o(n2):
+_______________________________________________________________________________________
+
+  char x --> 1+3                 double                char--> 1+7
+  int y  --> 4      16           int      16           double--> 8    24
+  double -->8                    char                  int --> 4+4   
+
+  int                            double
+  char          16               char      16
+  double                         +int
+ ________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
